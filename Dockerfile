@@ -13,4 +13,4 @@ RUN set -e; \
         ;
 COPY requirements.txt /flask
 RUN pip install -r requirements.txt
-CMD ["python","index.py"]
+CMD ["python","app.py"]

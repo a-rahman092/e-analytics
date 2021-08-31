@@ -1,52 +1,53 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <meta name="theme-color" content="#34A5DA">
 
-    <link rel="icon" sizes="192x192" href="../static/images/icon.png">
+    <title>E-Analytics</title>
+  </head>
+  <body>
+    <div class="row m-0 py-5 py-md-0 d-flex align-items-center" style="background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,95,104,1) 0%, rgba(15,156,168,1) 90% );">
+        <div class="col-md-6 text-white ps-5">
+            <h1>Analytics Tool For Ecommerce Businesses</h1>
+            <p>With this analysis, the e-commerce business can identify various aspects of the shopping pattern and take measures if required.</p>
+        </div>
+        <div class="col-md-6">
+            <img src="../static/bg1.png" width="90%" height="90%"/>
+        </div>
+    </div>
+    <div class="container text-center my-5">
+        <h3>Description</h3>
+        <p>With the increase in consumer demand , the E-commerce space has boomed. This also lead to an increase in fierce competition in today's online marketplace. The ecommerce industry sells a diverse product line of grocery items and merchandise products, such as food, pharmaceuticals, apparel, games and toys, hobby items, furniture and appliances. The analysis of such industry is of great importance as it gives insights for the sales and profits of various products.</p>
+    </div>
+    <div class="container my-5">
+        <h3 class="text-center mb-4">Dashboard</h3>
+        <iframe src="https://drive.google.com/file/d/1T0h12zopq8FNgatUM1MJAuV7HmlLTMtH/preview" width="100%" height="780" frameborder="0"></iframe>
+        
+    </div>
 
-    <link rel="manifest" href="../static/manifest.json">
-
-    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../static/css/style.css">
-    <link rel="stylesheet" href="../static/css/aos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <title>Customer Care Registry</title>
-</head>
-
-<body>
-    <h1>Hello</h1>
-
-
-    <script src="../static/app.js"></script>
-    <script src="../static/js/aos.js"></script>
-    <script src="../static/js/jquery-3.3.1.slim.min.js"></script>
-    <script src="../static/js/popper.min.js"></script>
-    <script src="../static/js/bootstrap.min.js"></script>
     <script>
-        AOS.init({
-            once: 'true'
-        })
+      window.watsonAssistantChatOptions = {
+          integrationID: "3f744d3e-c412-4388-adf8-0aa8d6f08505", // The ID of this integration.
+          region: "eu-gb", // The region your integration is hosted in.
+          serviceInstanceID: "01a54bdb-4283-4bc5-9169-7c5ae35aef9c", // The ID of your service instance.
+          onLoad: function(instance) { instance.render(); }
+        };
+      setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js"
+        document.head.appendChild(t);
+      });
     </script>
-    <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.display === "block") {
-                    panel.style.display = "none";
-                } else {
-                    panel.style.display = "block";
-                }
-            });
-        }
-    </script>
-</body>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+  </body>
 </html>
